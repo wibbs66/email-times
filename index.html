@@ -1,0 +1,710 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>The&nbsp;Times&nbsp;and&nbsp;The&nbsp;Sunday&nbsp;Times</title>
+    <style type="text/css">
+    @font-face {
+        font-family: 'TimesModern-Regular';
+        font-style: normal;
+        font-weight: 400;
+        src: url(fonts/TimesDigitalW04-Regular.woff2) format('woff2');
+    }
+    
+    @font-face {
+        font-family: 'GillSansMTStd-Medium';
+        font-style: normal;
+        font-weight: 400;
+        src: url(fonts/GillSansMTStd-Medium.woff2) format('woff2');
+    }
+    
+    .ReadMsgBody {
+        width: 100%;
+        background-color: #ffffff;
+    }
+    
+    .ExternalClass {
+        width: 100%;
+        background-color: #ffffff;
+    }
+    
+    .emailLogo {
+        height: auto !important;
+        max-width: 240px !important;
+        width: 100% !important;
+    }
+    
+    .emailImage {
+        height: auto !important;
+        max-width: 600px !important;
+        width: 100% !important;
+    }
+    
+    body {
+        width: 100%;
+        background-color: #ffffff;
+        margin: 0;
+        padding: 0;
+        -webkit-font-smoothing: antialiased;
+        font-family: Arial, Helvetica, sans-serif
+    }
+    
+    table {
+        border-collapse: collapse;
+    }
+    
+    @media only screen and (max-width: 640px) {
+        body[yahoo] .deviceWidth {
+            width: 440px!important;
+            padding: 0 0px;
+        }
+        body[yahoo] .imageWidth {
+            width: 420px!important;
+            padding: 0 0px;
+        }
+        body[yahoo] .hdrWidth {
+            width: 480px!important;
+            padding: 0 0px;
+        }
+        body[yahoo] .center {
+            /*text-align: center!important;*/
+        }
+        body[yahoo] .bdr1 {
+            border-top-style: solid!important;
+            border-top-width: 1px!important;
+            border-top-color: #e5e5e5!important;
+        }
+        body[yahoo] .bdr2 {
+            border-bottom-style: solid!important;
+            border-bottom-width: 1px!important;
+            border-bottom-color: #e5e5e5!important;
+        }
+        body[yahoo] .header {
+            padding: 40px 30px 15px 30px !important;
+        }
+        body[yahoo] .logo {
+            font-size: 25px !important;
+        }
+        body[yahoo] .header_img {
+            width: 440px!important;
+            height: 291px!important;
+        }
+        body[yahoo] .oneCol {
+            display: block !important;
+            width: 100% !important;
+            padding: 0!important;
+        }
+        body[yahoo] .divider {
+            display: block!important;
+            width: 100%!important;
+            height: 10px;
+            padding-top: 5px;
+        }
+        body[yahoo] .columnist1 {
+            padding-bottom: 15px!important;
+        }
+        body[yahoo] .columnist2 {
+            padding-top: 15px!important;
+        }
+        body[yahoo] .subscribe .oneCol table {
+            /*width: 80%;*/
+        }
+        body[yahoo] .photo {
+            width: 420px!important;
+            height: 237px!important;
+        }
+        body[yahoo] .plus .oneCol {
+            text-align: left!important;
+        }
+        body[yahoo] .cta {
+            text-align: center;
+            padding-left: 29px!important;
+        }
+        body[yahoo] .subscribe .oneCol {
+            display: table-footer-group!important;
+            padding-bottom: 15px!important;
+            text-align: left!important;
+        }
+        body[yahoo] .subscribe .packshot img {
+            width: 400px!important;
+            padding-left: 10px!important;
+        }
+        body[yahoo] .subscribe .packshot {
+            display: table-header-group!important;
+        }
+        body[yahoo] .video {
+            width: 420px!important;
+            height: 237px!important;
+        }
+        body[yahoo] .followUs {
+            width: 140px!important;
+        }
+        body[yahoo] .followUs td {
+            padding-right: 10px!important;
+        }
+        body[yahoo] .social img {
+            max-width: 100%!important;
+            height: auto!important;
+        }
+        body[yahoo] .hideMobile {
+            display: none;
+        }
+        body[yahoo] .steps {
+            padding-left: 20px!important;
+        }
+        body[yahoo] .sectionLabel {
+            margin-top: 10px!important;
+        }
+    }
+    
+    @media only screen and (max-width: 479px) {
+        body[yahoo] .bodyText {
+            font-size: 20px!important;
+        }
+        body[yahoo] .titleText {
+            font-size: 28px!important;
+        }
+        body[yahoo] .subTitleText {
+            font-size: 20px!important;
+        }
+        body[yahoo] .deviceWidth {
+            width: 320px!important;
+            padding: 0 0px;
+        }
+        body[yahoo] .imageWidth {
+            width: 260px!important;
+            padding: 0 0px;
+        }
+        body[yahoo] .hdrWidth {
+            width: 320px!important;
+            padding: 0 0px;
+        }
+        body[yahoo] .center {
+            text-align: center!important;
+            padding-left: 0!important;
+            padding-right: 0!important;
+        }
+        body[yahoo] .bdr1 {
+            border-top-style: solid!important;
+            border-top-width: 1px!important;
+            border-top-color: #e5e5e5!important;
+        }
+        body[yahoo] .bdr2 {
+            border-bottom-style: solid!important;
+            border-bottom-width: 1px!important;
+            border-bottom-color: #e5e5e5!important;
+        }
+        body[yahoo] .header {
+            padding: 40px 30px 15px 30px !important;
+        }
+        body[yahoo] .logo {
+            font-size: 20px !important;
+        }
+        body[yahoo] .header_img {
+            width: 320px !important;
+            height: 211px !important;
+        }
+        body[yahoo] .oneCol {
+            display: block !important;
+            width: 100% !important;
+            padding: 0!important;
+        }
+        body[yahoo] .divider {
+            display: block!important;
+            width: 100%!important;
+            height: 10px;
+            padding-top: 5px;
+        }
+        body[yahoo] .columnist1 {
+            padding-bottom: 15px!important;
+        }
+        body[yahoo] .columnist2 {
+            padding-top: 15px!important;
+        }
+        body[yahoo] .subscribe .oneCol table {
+            /*width: 80%;*/
+        }
+        body[yahoo] .photo {
+            width: 260px!important;
+            height: 147px!important;
+        }
+        body[yahoo] .plus .oneCol {
+            text-align: left!important;
+        }
+        body[yahoo] .cta {
+            text-align: center;
+            padding-left: 29px!important;
+        }
+        body[yahoo] .subscribe .oneCol {
+            display: table-footer-group!important;
+            padding-bottom: 15px!important;
+            text-align: left!important;
+        }
+        body[yahoo] .subscribe .packshot {
+            display: table-header-group!important;
+        }
+        body[yahoo] .subscribe .packshot img {
+            width: 249px!important;
+            padding-left: 6px!important;
+        }
+        body[yahoo] .video {
+            width: 260px!important;
+            height: 147px!important;
+        }
+        body[yahoo] .followUs {
+            width: 110px!important;
+        }
+        body[yahoo] .followUs td {
+            padding-right: 10px!important;
+            text-align: center;
+        }
+        body[yahoo] .know {
+            font-size: 19px!important;
+        }
+        body[yahoo] .socialLabels img {
+            height: 20px!important;
+        }
+        body[yahoo] .groupLabel {
+            font-size: 9px!important;
+            line-height: 20px!important;
+        }
+        body[yahoo] .social img {
+            max-width: 100%!important;
+            height: auto!important;
+            padding-top: 20px!important;
+        }
+        body[yahoo] .hideMobile {
+            display: none;
+        }
+        body[yahoo] .steps {
+            padding-left: 20px!important;
+        }
+        body[yahoo] .sectionLabel {
+            margin-top: 10px!important;
+        }
+    }
+    
+    .fake_css {
+        width: 100%;
+        display: block;
+        -webkit-text-size-adjust: none;
+        margin: 1em 0;
+        color: black;
+        text-decoration: none;
+        border-bottom: none;
+        background: none;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        background: none;
+        border-bottom: thin;
+        border-bottom-style: double;
+        background-repeat: repeat;
+        border-left-color: #C06;
+        background-attachment: scroll;
+        border: thin;
+        page-break-before: auto;
+        page-break-before: avoid;
+        page-break-inside: inherit;
+        azimuth: center-left;
+        vertical-align: inherit;
+        font-stretch: extra-condensed;
+        font-size-adjust: none;
+        list-style-image: none;
+        counter-reset: none;
+        letter-spacing: normal;
+        empty-cells: inherit;
+        elevation: higher;
+    }
+    </style>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" yahoo="fix" style="font-family: 'TimesModern-Regular', Times, 'Times New Roman', serif">
+    <!-- Email preview text goes in a hidden div tag -->
+    <div style="display: none;">An awesome email that will amaze you.</div>
+    <!-- Wrapper -->
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+        <tr>
+            <td width="100%" valign="top" style="padding-top:0px;" align="center">
+                <!-- One Column -->
+                <table width="600" class="imageWidth" border="0" cellpadding="0" cellspacing="0" align="center">
+                    <tr valign="top">
+                        <td style="font-size: 12px; color:#999999; font-family: 'GillSansMTStd-Medium', 'Trebuchet MS', Helvetica, sans-serif; text-align: center; line-height: 1.3em; vertical-align: top; padding:5px 20px 5px 20px">Having trouble reading this email? <a href="%view_email_url%" target="_blank" title="" style="color:#999999;text-decoration:underline;"><u>Click here</u></a></td>
+                    </tr>
+                </table>
+                <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="hdrWidth">
+                    <tr valign="top">
+                        <td bgcolor="#5db0ca" style="padding: 40px 50px 0 50px;" class="header">
+                            <table border="0" cellpadding="0" cellspacing="0" style="border-top: 4px solid #ffffff;" width="100%">
+                                <tr valign="top">
+                                    <td width="100%"><img src="http://image.email.thesun.co.uk/lib/fe92157073620d7976/m/3/109053710_1.gif" alt="" height="15" style="display: block;"></td>
+                                </tr>
+                                <tr valign="top">
+                                    <td align="left"><img src="http://image.email.thesun.co.uk/lib/fe92157073620d7976/m/3/109053710_logo2.png" width="212" height="46" style="font-family: 'TimesModern-Regular', Times, 'Times New Roman', serif; display: block; font-size: 16px; color: #ffffff;" alt="The&nbsp;Times &amp;  The&nbsp;Sunday&nbsp;Times" border="0" class="logo"></td>
+                                </tr>
+                                <tr valign="top">
+                                    <td align="left" style="font-family: 'TimesModern-Regular', Times, 'Times New Roman', serif; color:#ffffff;font-size:16px;font-weight:normal; font-style: italic; padding: 5px 0 0;" class="know">Know your times</td>
+                                </tr>
+                                <tr valign="top">
+                                    <td align="left" style="font-family: 'TimesModern-Regular', Times, 'Times New Roman', serif; color:#ffffff;font-size:35px; line-height: 1.2em; font-weight:normal; padding: 20px 0 7px 0; border-bottom: 2px solid #ffffff;">Test the future of The Times</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td align="left" style="padding:27px 0 24px 0;">
+                                                    <div>
+                                                        <!--[if mso]>
+                          <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://www.thetimes.co.uk/" style="font-family: 'Trebuchet MS', Helvetica, sans-serif; color:#476e78;font-size:16px; height:40px;v-text-anchor:middle;width:200px; display: block;" arcsize="20%" stroke="f" fillcolor="#ffffff">
+                            <w:anchorlock/>
+                            <center>
+                          <![endif]-->
+                                                        <a target="_blank" href="http://www.thetimes.co.uk/" style="font-family: 'Trebuchet MS', Helvetica, sans-serif; color:#5db0ca;font-size:16px; font-weight: normal; background-color:#ffffff;border-radius:8px;display:block;line-height:40px;text-align:center;text-decoration:none;width:203px;-webkit-text-size-adjust:none;">Read today's articles</a>
+                                                        <!--[if mso]>
+    </center>
+  </v:roundrect>
+<![endif]-->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>                                
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table width="600" class="imageWidth" border="0" cellpadding="0" cellspacing="0" align="center">
+                    <tr valign="top">
+                        <td bgcolor="#f7f7f7" style="padding: 27px 44px 15px 45px;" class="header">
+                            <table border="0" cellpadding="0" cellspacing="0" class="imageWidth" bgcolor="#f7f7f7" width="100%">
+                                <tr valign="top">
+                                    <td align="left" style="font-family: 'TimesModern-Regular', Times, 'Times New Roman', serif; color:#696969;font-size:18px;font-weight:normal; padding-top: 3px; line-height: 1.27em;" class="bodyText">Hi [Forename],</td>
+                                </tr>
+                                <tr valign="top">
+                                    <td align="left" style="font-family: 'TimesModern-Regular', Times, 'Times New Roman', serif; color:#696969;font-size:18px;font-weight:normal; padding-top: 24px; line-height: 1.27em;" class="bodyText">Thank you for helping us to shape The Times and The Sunday Times content recommendation engine.</td>
+                                </tr>                             
+                                <tr valign="top">
+                                    <td align="left" style="font-family: 'TimesModern-Regular', Times, 'Times New Roman', serif; color:#696969;font-size:18px;font-weight:normal; padding-top: 24px; padding-bottom: 27px; line-height: 1.27em;" class="bodyText">Simply scroll through the articles below and use our one-click survey to let us know on a scale of 1-5, how relevant they are to you. Click the link at the bottom of this email to feedback.</td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0" class="imageWidth" width="100%">
+                                <tr>
+                                    <td style="width: 511px; height: 288px;" align="center" class="video" bgcolor="#e8e8e8">
+                                        <a target="_blank" href="https://itunes.apple.com/gb/podcast/the-game-podcast/id191105605?mt=2"><img src="images/main.jpg" class="imageWidth" alt="Download Podcast" style="color: #ffffff; font-size: 34px; display: block;" border="0" /></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="http://tdi.tagmedia.co.uk/NITL/TNL_ACQUISITION/LIGHT_REGISTRATION/LIGHT_REG_EMAIL_2/109053712_/OUTPUT_FILES/images/1.gif" alt="" height="20" width="1" style="display: block;"></td>
+                                </tr>                                
+                                <tr>
+                                    <td><a href="#" style="font-family: 'TimesModern-Regular', Times, 'Times New Roman', serif; line-height: 1.18em; font-size:14px;font-weight:normal; color: #ffffff; display: block; width: 85px; height: 21px; background: #008640; text-decoration: none; text-align: center; padding-top: 5px;" class="sectionLabel">SPORT</a></td>
+                                </tr>                                
+                                <tr>
+                                    <td><img src="http://tdi.tagmedia.co.uk/NITL/TNL_ACQUISITION/LIGHT_REGISTRATION/LIGHT_REG_EMAIL_2/109053712_/OUTPUT_FILES/images/1.gif" alt="" height="20" width="1" style="display: block;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: 'TimesModern-Regular', Times, 'Times New Roman', serif; line-height: 1.18em; font-size:34px;font-weight:normal; color: #1d1d1b; padding: 0 0 7px 0;" class="titleText">Rampant Murray dispatches Kyrgios to march into quarter-finals</td>
+                                </tr>                                
+                                <tr>
+                                    <td style="font-family: 'TimesModern-Regular', Times, 'Times New Roman', serif; line-height: 1.27em; font-size:18px;font-weight:normal; color: #696969;" class="bodyText">Andy Murray embraced his status as the new favourite to win the men’s singles title at Wimbledon by sweeping aside Nick Kyrgios in straight...
+                                        <br/><a target="_blank" href="https://itunes.apple.com/gb/podcast/the-game-podcast/id191105605?mt=2" style="font-family: 'GillSansMTStd-Medium', 'Trebuchet MS', Helvetica, sans-serif; color:#cc0000;font-size:16px; font-weight:normal; text-decoration: none; display: block; padding-top: 4px;">Read the full story <sub style="vertical-align: top; font-size: 17px; padding-top: 2px; display: inline-block;">&gt;</sub></a></td>
+                                </tr>
+                            </table>      
+                            <table class="imageWidth" width="100%" border="0" cellpadding="0" cellspacing="0" align="left">
+                                <tr>
+                                    <td><img src="http://tdi.tagmedia.co.uk/NITL/TNL_ACQUISITION/LIGHT_REGISTRATION/LIGHT_REG_EMAIL_2/109053712_/OUTPUT_FILES/images/1.gif" alt="" height="30" width="1" style="display: block;"></td>
+                                </tr>                            
+                                <tr>
+                                    <td class="divider" style="border-top: solid #5db0cax 2px;"><img src="http://tdi.tagmedia.co.uk/NITL/TNL_ACQUISITION/LIGHT_REGISTRATION/LIGHT_REG_EMAIL_2/109053712_/OUTPUT_FILES/images/1.gif" alt="" height="1" width="1" style="display: block;"></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="http://tdi.tagmedia.co.uk/NITL/TNL_ACQUISITION/LIGHT_REGISTRATION/LIGHT_REG_EMAIL_2/109053712_/OUTPUT_FILES/images/1.gif" alt="" height="30" width="1" style="display: block;"></td>
+                                </tr>                                
+                            </table>
+                            <table class="imageWidth" width="100%" border="0" cellpadding="0" cellspacing="0" align="left">
+                                <tr>
+                                    <td>
+                                        <table width="100%" border="0" cellpadding="0" cellspacing="0" align="left">
+                                            <tr valign="top">
+                                                <td class="oneCol photo" width="250">
+                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="left">
+                                                        <tr>
+                                                            <td style="width: 248px; height: 140px; background: #e8e8e8;"><img src="images/t_sport.jpg" alt="" class="imageWidth" style="display: block;"/></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>    
+                                                <td class="oneCol" style="padding-left: 18px;">
+                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="left">
+                                                       <tr>
+                                                            <td><a href="#" style="font-family: 'TimesModern-Regular', Times, 'Times New Roman', serif; line-height: 1.18em; font-size:14px;font-weight:normal; color: #ffffff; display: block; width: 85px; height: 21px; background: #008640; text-decoration: none; text-align: center; padding-top: 5px;" class="sectionLabel">SPORT</a></td>
+                                                        </tr>                                
+                                                        <tr>
+                                                            <td><img src="http://tdi.tagmedia.co.uk/NITL/TNL_ACQUISITION/LIGHT_REGISTRATION/LIGHT_REG_EMAIL_2/109053712_/OUTPUT_FILES/images/1.gif" alt="" height="10" width="1" style="display: block;"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-family: 'TimesModern-Regular', Times, 'Times New Roman', serif; line-height: 1.18em; font-size:23px;font-weight:normal; color: #1d1d1b;">England want our young stars, claim Wales</td>
+                                                        </tr>                                
+                                                        <tr>
+                                                            <td style="font-family: 'TimesModern-Regular', Times, 'Times New Roman', serif; line-height: 1.27em; font-size:18px;font-weight:normal; color: #696969;" class="bodyText">
+                                                                <a target="_blank" href="https://itunes.apple.com/gb/podcast/the-game-podcast/id191105605?mt=2" style="font-family: 'GillSansMTStd-Medium', 'Trebuchet MS', Helvetica, sans-serif; color:#cc0000;font-size:16px; font-weight:normal; text-decoration: none; display: block; padding-top: 4px;">Read the full story <sub style="vertical-align: top; font-size: 17px; padding-top: 2px; display: inline-block;">&gt;</sub></a></td>
+                                                        </tr>                                                        
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>    
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="imageWidth" width="100%" border="0" cellpadding="0" cellspacing="0" align="left">
+                                <tr>
+                                    <td><img src="http://tdi.tagmedia.co.uk/NITL/TNL_ACQUISITION/LIGHT_REGISTRATION/LIGHT_REG_EMAIL_2/109053712_/OUTPUT_FILES/images/1.gif" alt="" height="30" width="1" style="display: block;"></td>
+                                </tr>                            
+                                <tr>
+                                    <td class="divider" style="border-top: solid #dbdbdb 1px;"><img src="http://tdi.tagmedia.co.uk/NITL/TNL_ACQUISITION/LIGHT_REGISTRATION/LIGHT_REG_EMAIL_2/109053712_/OUTPUT_FILES/images/1.gif" alt="" height="1" width="1" style="display: block;"></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="http://tdi.tagmedia.co.uk/NITL/TNL_ACQUISITION/LIGHT_REGISTRATION/LIGHT_REG_EMAIL_2/109053712_/OUTPUT_FILES/images/1.gif" alt="" height="30" width="1" style="display: block;"></td>
+                                </tr>                                
+                            </table> 
+                            <table class="imageWidth" width="100%" border="0" cellpadding="0" cellspacing="0" align="left">
+                                <tr>
+                                    <td>
+                                        <table width="100%" border="0" cellpadding="0" cellspacing="0" align="left">
+                                            <tr valign="top">
+                                                <td class="oneCol photo" width="250">
+                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="left">
+                                                        <tr>
+                                                            <td style="width: 248px; height: 140px;"><img src="images/t_winter.png" alt="" class="imageWidth" style="display: block;"/></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>    
+                                                <td class="oneCol" style="padding-left: 18px;">
+                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="left">
+                                                       <tr>
+                                                            <td><a href="#" style="font-family: 'TimesModern-Regular', Times, 'Times New Roman', serif; line-height: 1.18em; font-size:14px;font-weight:normal; color: #ffffff; display: block; width: 85px; height: 21px; background: #008640; text-decoration: none; text-align: center; padding-top: 5px;" class="sectionLabel">SPORT</a></td>
+                                                        </tr>                                
+                                                        <tr>
+                                                            <td><img src="http://tdi.tagmedia.co.uk/NITL/TNL_ACQUISITION/LIGHT_REGISTRATION/LIGHT_REG_EMAIL_2/109053712_/OUTPUT_FILES/images/1.gif" alt="" height="10" width="1" style="display: block;"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-family: 'TimesModern-Regular', Times, 'Times New Roman', serif; line-height: 1.18em; font-size:23px;font-weight:normal; color: #1d1d1b;">England want our young stars, claim Wales</td>
+                                                        </tr>                                
+                                                        <tr>
+                                                            <td style="font-family: 'TimesModern-Regular', Times, 'Times New Roman', serif; line-height: 1.27em; font-size:18px;font-weight:normal; color: #696969;" class="bodyText">
+                                                                <a target="_blank" href="https://itunes.apple.com/gb/podcast/the-game-podcast/id191105605?mt=2" style="font-family: 'GillSansMTStd-Medium', 'Trebuchet MS', Helvetica, sans-serif; color:#cc0000;font-size:16px; font-weight:normal; text-decoration: none; display: block; padding-top: 4px;">Read the full story <sub style="vertical-align: top; font-size: 17px; padding-top: 2px; display: inline-block;">&gt;</sub></a></td>
+                                                        </tr>                                                        
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>    
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="imageWidth" width="100%" border="0" cellpadding="0" cellspacing="0" align="left">
+                                <tr>
+                                    <td><img src="http://tdi.tagmedia.co.uk/NITL/TNL_ACQUISITION/LIGHT_REGISTRATION/LIGHT_REG_EMAIL_2/109053712_/OUTPUT_FILES/images/1.gif" alt="" height="30" width="1" style="display: block;"></td>
+                                </tr>                            
+                                <tr>
+                                    <td class="divider" style="border-top: solid #dbdbdb 1px;"><img src="http://tdi.tagmedia.co.uk/NITL/TNL_ACQUISITION/LIGHT_REGISTRATION/LIGHT_REG_EMAIL_2/109053712_/OUTPUT_FILES/images/1.gif" alt="" height="1" width="1" style="display: block;"></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="http://tdi.tagmedia.co.uk/NITL/TNL_ACQUISITION/LIGHT_REGISTRATION/LIGHT_REG_EMAIL_2/109053712_/OUTPUT_FILES/images/1.gif" alt="" height="30" width="1" style="display: block;"></td>
+                                </tr>                                
+                            </table>     
+                            <table class="imageWidth" width="100%" border="0" cellpadding="0" cellspacing="0" align="left">
+                                <tr>
+                                    <td>
+                                        <table width="100%" border="0" cellpadding="0" cellspacing="0" align="left">
+                                            <tr valign="top">
+                                                <td class="oneCol photo" width="250">
+                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="left">
+                                                        <tr>
+                                                            <td style="width: 248px; height: 140px; background: #e8e8e8;"><img src="images/t_business.jpg" alt="" class="imageWidth" style="display: block;"/></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>    
+                                                <td class="oneCol" style="padding-left: 18px;">
+                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="left">
+                                                       <tr>
+                                                            <td><a href="#" style="font-family: 'TimesModern-Regular', Times, 'Times New Roman', serif; line-height: 1.18em; font-size:14px;font-weight:normal; color: #ffffff; display: block; width: 85px; height: 21px; background: #005c91; text-decoration: none; text-align: center; padding-top: 5px;" class="sectionLabel">BUSINESS</a></td>
+                                                        </tr>                                
+                                                        <tr>
+                                                            <td><img src="http://tdi.tagmedia.co.uk/NITL/TNL_ACQUISITION/LIGHT_REGISTRATION/LIGHT_REG_EMAIL_2/109053712_/OUTPUT_FILES/images/1.gif" alt="" height="10" width="1" style="display: block;"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-family: 'TimesModern-Regular', Times, 'Times New Roman', serif; line-height: 1.18em; font-size:23px;font-weight:normal; color: #1d1d1b;">Bank of England injects £150bn into economy</td>
+                                                        </tr>                                
+                                                        <tr>
+                                                            <td style="font-family: 'TimesModern-Regular', Times, 'Times New Roman', serif; line-height: 1.27em; font-size:18px;font-weight:normal; color: #696969;" class="bodyText">
+                                                                <a target="_blank" href="https://itunes.apple.com/gb/podcast/the-game-podcast/id191105605?mt=2" style="font-family: 'GillSansMTStd-Medium', 'Trebuchet MS', Helvetica, sans-serif; color:#cc0000;font-size:16px; font-weight:normal; text-decoration: none; display: block; padding-top: 4px;">Read the full story <sub style="vertical-align: top; font-size: 17px; padding-top: 2px; display: inline-block;">&gt;</sub></a></td>
+                                                        </tr>                                                        
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>    
+                                    </td>
+                                </tr>
+                            </table>                                                          
+
+                            <table class="imageWidth" width="100%" border="0" cellpadding="0" cellspacing="0" align="left">
+                                <tr>
+                                    <td><img src="http://tdi.tagmedia.co.uk/NITL/TNL_ACQUISITION/LIGHT_REGISTRATION/LIGHT_REG_EMAIL_2/109053712_/OUTPUT_FILES/images/1.gif" alt="" height="30" width="1" style="display: block;"></td>
+                                </tr>                            
+                                <tr>
+                                    <td class="divider" style="border-top: solid #dbdbdb 1px;"><img src="http://tdi.tagmedia.co.uk/NITL/TNL_ACQUISITION/LIGHT_REGISTRATION/LIGHT_REG_EMAIL_2/109053712_/OUTPUT_FILES/images/1.gif" alt="" height="1" width="1" style="display: block;"></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="http://tdi.tagmedia.co.uk/NITL/TNL_ACQUISITION/LIGHT_REGISTRATION/LIGHT_REG_EMAIL_2/109053712_/OUTPUT_FILES/images/1.gif" alt="" height="30" width="1" style="display: block;"></td>
+                                </tr>                                
+                            </table> 
+                            <table class="imageWidth" width="100%" border="0" cellpadding="0" cellspacing="0" align="left">
+                                <tr>
+                                    <td>
+                                        <table width="100%" border="0" cellpadding="0" cellspacing="0" align="left">
+                                            <tr valign="top">
+                                                <td class="oneCol photo" width="250">
+                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="left">
+                                                        <tr>
+                                                            <td style="width: 248px; height: 140px; background: #e8e8e8;"><img src="images/t_world.jpg" alt="" class="imageWidth" style="display: block;"/></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>    
+                                                <td class="oneCol" style="padding-left: 18px;">
+                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="left">
+                                                       <tr>
+                                                            <td><a href="#" style="font-family: 'TimesModern-Regular', Times, 'Times New Roman', serif; line-height: 1.18em; font-size:14px;font-weight:normal; color: #ffffff; display: block; width: 85px; height: 21px; background: #d93a01; text-decoration: none; text-align: center; padding-top: 5px;" class="sectionLabel">WORLD</a></td>
+                                                        </tr>                                
+                                                        <tr>
+                                                            <td><img src="http://tdi.tagmedia.co.uk/NITL/TNL_ACQUISITION/LIGHT_REGISTRATION/LIGHT_REG_EMAIL_2/109053712_/OUTPUT_FILES/images/1.gif" alt="" height="10" width="1" style="display: block;"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-family: 'TimesModern-Regular', Times, 'Times New Roman', serif; line-height: 1.18em; font-size:23px;font-weight:normal; color: #1d1d1b;">Migrants 'killed for organs if they cannot pay'</td>
+                                                        </tr>                                
+                                                        <tr>
+                                                            <td style="font-family: 'TimesModern-Regular', Times, 'Times New Roman', serif; line-height: 1.27em; font-size:18px;font-weight:normal; color: #696969;" class="bodyText">
+                                                                <a target="_blank" href="https://itunes.apple.com/gb/podcast/the-game-podcast/id191105605?mt=2" style="font-family: 'GillSansMTStd-Medium', 'Trebuchet MS', Helvetica, sans-serif; color:#cc0000;font-size:16px; font-weight:normal; text-decoration: none; display: block; padding-top: 4px;">Read the full story <sub style="vertical-align: top; font-size: 17px; padding-top: 2px; display: inline-block;">&gt;</sub></a></td>
+                                                        </tr>                                                        
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>    
+                                    </td>
+                                </tr>
+                            </table>                                                                                                                                       
+                            <table class="imageWidth" width="100%" border="0" cellpadding="0" cellspacing="0" align="left">
+                                <tr>
+                                   <td><img src="http://tdi.tagmedia.co.uk/NITL/TNL_ACQUISITION/LIGHT_REGISTRATION/LIGHT_REG_EMAIL_2/109053712_/OUTPUT_FILES/images/1.gif" alt="" height="30" width="1" style="display: block;"></td>
+                                </tr> 
+                                <tr>
+                                    <td class="divider" style="border-top: solid #dbdbdb 1px;"><img src="http://tdi.tagmedia.co.uk/NITL/TNL_ACQUISITION/LIGHT_REGISTRATION/LIGHT_REG_EMAIL_2/109053712_/OUTPUT_FILES/images/1.gif" alt="" height="1" width="1" style="display: block;"></td>
+                                </tr>                                                        
+                            </table>                             
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" bgcolor="#f7f7f7" style="padding: 20px 0 20px 0;">
+                        <div>
+                                                        <!--[if mso]>
+                          <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://www.thetimes.co.uk/" style="font-family: 'Trebuchet MS', Helvetica, sans-serif; color:#476e78;font-size:16px; height:40px;v-text-anchor:middle;width:200px; display: block;" arcsize="20%" stroke="f" fillcolor="#ffffff">
+                            <w:anchorlock/>
+                            <center>
+                          <![endif]-->
+                                                        <a target="_blank" href="http://www.thetimes.co.uk/" style="font-family: 'Trebuchet MS', Helvetica, sans-serif; color:#ffffff;font-size:16px; font-weight: normal; background-color:#5db0ca;border-radius:8px;display:block;line-height:40px;text-align:center;text-decoration:none;width:203px;-webkit-text-size-adjust:none;">Tell us what you think</a>
+                                                        <!--[if mso]>
+    </center>
+  </v:roundrect>
+<![endif]-->
+                                                    </div>
+                        </td>
+                    </tr>
+                </table>
+                <!-- End One Column -->
+                <!-- End One Column -->
+                <table class="deviceWidth" width="600" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#5db0ca">
+                    <tr>
+                      <td width="50"></td>
+                      
+                      <td>
+                      
+                      <table class="deviceWidth" width="500" border="0" cellpadding="0" cellspacing="0" align="center">
+                    <tr>
+                        <td><img src="http://tdi.tagmedia.co.uk/NITL/TNL_ACQUISITION/LIGHT_REGISTRATION/LIGHT_REG_EMAIL_2/109053712_/OUTPUT_FILES/images/1.gif" alt="" height="26" width="1" style="display: block;"></td>
+                  </tr>                                                          
+              </table>  
+              
+                               
+                <!-- Social Media -->
+                <table width="500" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center">
+                    <tr>
+                        <td style="border-top: solid #ffffff 1px;"><img src="http://tdi.tagmedia.co.uk/NITL/TNL_ACQUISITION/LIGHT_REGISTRATION/LIGHT_REG_EMAIL_2/109053712_/OUTPUT_FILES/images/1.gif" alt="" height="11" width="1" style="display: block;"></td>
+                    </tr>
+                </table>
+                <table width="500" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center">
+                    <tr>
+                    
+                         <td align="left" bgcolor="#5db0ca" style="padding: 3px 0 0;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="200" align="left" class="followUs">
+                                            <tr>
+                                                <td style="font-family: 'GillSansMTStd-Medium', 'Trebuchet MS', Helvetica, sans-serif; color:#ffffff;font-size:15px; line-height:20px; font-weight:normal; padding-top: 12px; letter-spacing: 0.1em;">FOLLOW US</td>
+                                            </tr>
+                                        </table>        
+                                        <table border="0" cellpadding="0" cellspacing="0" align="left">
+                                            <tr>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://www.facebook.com/timesandsundaytimes/" target="_blank"><img src="images/109053710_i_fb.png" alt="Facebook" style="display: block; font-family: 'GillSansMTStd-Medium', 'Trebuchet MS', Helvetica, sans-serif; color: #333333; font-size: 16px;" border="0"></a>
+                                                </td>
+                                                <td style="padding-right: 10px;">
+                                                    <a href="https://twitter.com/thetimes?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="images/109053710_i_tw.png" alt="Twitter" style="display: block; font-family: 'GillSansMTStd-Medium', 'Trebuchet MS', Helvetica, sans-serif; color: #333333; font-size: 16px;" border="0"></a>
+                                                </td>
+                                                <td>
+                                                    <a href="https://www.instagram.com/thetimes/?hl=en" target="_blank"><img src="images/109053710_i_ig.png" alt="Instagram" style="display: block; font-family: 'GillSansMTStd-Medium', 'Trebuchet MS', Helvetica, sans-serif;color: #333333; font-size: 16px;" border="0"></a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                      </td>
+                    </tr>
+                </table>
+                <table width="500" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center">
+                    <tr>
+                        <td><img src="http://tdi.tagmedia.co.uk/NITL/TNL_ACQUISITION/LIGHT_REGISTRATION/LIGHT_REG_EMAIL_2/109053712_/OUTPUT_FILES/images/1.gif" alt="" height="10" width="1" style="display: block;"></td>
+                    </tr>
+                </table>                 
+                <table width="500" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center">
+                    <tr>
+                        <td style="border-top: solid #ffffff 1px;"><img src="http://tdi.tagmedia.co.uk/NITL/TNL_ACQUISITION/LIGHT_REGISTRATION/LIGHT_REG_EMAIL_2/109053712_/OUTPUT_FILES/images/1.gif" alt="" height="26" width="1" style="display: block;"></td>
+                    </tr>
+                </table> 
+              <!-- .End Social Media --> 
+                      </td>
+                      <td width="50"></td>
+                </table>
+                             
+                <!-- Footer Legal Starts here -->
+                <table width="600" class="imageWidth" border="0" cellpadding="0" cellspacing="0" align="center">
+                    <tr>
+                        <td style="padding:20px 0">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="imageWidth">
+                                <tr>
+                                    <td>
+                                        <table width="100%" cellpadding="0" cellspacing="0" border="0" align="left" class="imageWidth">
+                                            <tr>
+                                                <td valign="top" style="font-size: 12px; color:#999999; font-family: 'GillSansMTStd-Medium', 'Trebuchet MS', Helvetica, sans-serif; padding-bottom:20px; line-height: 1.3em;" class="center"> This email is from a member of the News UK group. News Corp UK &amp; Ireland Limited, with its registered office at 1 London Bridge Street, London SE1 9GF is the holding company for the News UK Group and is registered in England No. 81701. VAT number GB 243 8054 69. To see our privacy policy, <a href="http://www.newsprivacy.co.uk/" target="_blank" style="color:#999999; text-decoration: underline;">click here</a>.</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Footer Legal Ends here -->
+            </td>
+        </tr>
+    </table>
+    <!-- End Wrapper -->
+    <!--End Background image fix-->
+</body>
+
+</html>
